@@ -84,7 +84,11 @@ namespace WindowsFormsApp0425
                     
                 }
             }
-            }
+            
+        }
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.ExitThread(); //關閉所有執行緒 
         }
     }
 }
